@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
+body{display: flex;justify-content: center;align-items: center;background-color: #5bb0ff;}
 
 .logo {
   height: 6em;
@@ -11,27 +12,7 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
@@ -40,3 +21,15 @@
 .read-the-docs {
   color: #888;
 }
+ul{padding: 0;}
+ul li{display: flex;justify-content: space-between; padding: 5px 5px;align-items: center;box-shadow: 1px 1px 5px #e7e7e7; margin: 3px 0;border-radius: 20px;}
+.searchInput,.inputAdd{width: 400px;display: block;border-radius: 20px;border:none; padding: 10px;box-shadow: 1px 1px 5px #ccc;margin-top:20px ;}
+.completed{opacity: 0.5;
+  box-shadow: 1px 4px 20px #c3ff66;
+  background: #a5ffa5;}
+  .todo{background-color: #fff;}
+  .btnAdd{background-color: #a5ffa5;margin: 0 6px;}
+  .btnDel{background-color: red;color: #fff;margin: 0 6px;}
+  .inputAdd{display: block;border-radius: 20px;border:none; padding: 10px;box-shadow: 1px 1px 5px #ccc;width: 100%;margin-top:20px ; margin:  20px 0;}
+  .todoContainer{    max-width: 400px;
+    width: 100%;}
