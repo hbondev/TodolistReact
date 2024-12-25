@@ -8,6 +8,7 @@ export default function Todo(){
         setTask(e.target.value);
     }
     const addHandler = () => {
+        task.trim("") &&
         setTodo([...todo, task]);
     }
     const deleteTask = (index) => {
